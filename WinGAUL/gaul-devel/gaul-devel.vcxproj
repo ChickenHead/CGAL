@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BA03B450-ECDE-4501-AA57-2E8659C34ED7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gauldevel</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\WinGAUL\;$(SolutionDir)\gaul-util\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\gaul-util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>false</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gaul-util\gaul-util.vcxproj">
+      <Project>{f70f23fa-5543-4a6b-9ad7-a2b7a52f20c6}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ga_bitstring.c" />
+    <ClCompile Include="ga_chromo.c" />
+    <ClCompile Include="ga_climbing.c" />
+    <ClCompile Include="ga_compare.c" />
+    <ClCompile Include="ga_core.c" />
+    <ClCompile Include="ga_crossover.c" />
+    <ClCompile Include="ga_de.c" />
+    <ClCompile Include="ga_deterministiccrowding.c" />
+    <ClCompile Include="ga_gradient.c" />
+    <ClCompile Include="ga_intrinsics.c" />
+    <ClCompile Include="ga_io.c" />
+    <ClCompile Include="ga_mutate.c" />
+    <ClCompile Include="ga_optim.c" />
+    <ClCompile Include="ga_qsort.c" />
+    <ClCompile Include="ga_randomsearch.c" />
+    <ClCompile Include="ga_rank.c" />
+    <ClCompile Include="ga_replace.c" />
+    <ClCompile Include="ga_sa.c" />
+    <ClCompile Include="ga_seed.c" />
+    <ClCompile Include="ga_select.c" />
+    <ClCompile Include="ga_similarity.c" />
+    <ClCompile Include="ga_simplex.c" />
+    <ClCompile Include="ga_stats.c" />
+    <ClCompile Include="ga_systematicsearch.c" />
+    <ClCompile Include="ga_tabu.c" />
+    <ClCompile Include="ga_utility.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gaul.h" />
+    <ClInclude Include="gaul\ga_bitstring.h" />
+    <ClInclude Include="gaul\ga_chromo.h" />
+    <ClInclude Include="gaul\ga_climbing.h" />
+    <ClInclude Include="gaul\ga_core.h" />
+    <ClInclude Include="gaul\ga_de.h" />
+    <ClInclude Include="gaul\ga_deterministiccrowding.h" />
+    <ClInclude Include="gaul\ga_gradient.h" />
+    <ClInclude Include="gaul\ga_intrinsics.h" />
+    <ClInclude Include="gaul\ga_optim.h" />
+    <ClInclude Include="gaul\ga_qsort.h" />
+    <ClInclude Include="gaul\ga_randomsearch.h" />
+    <ClInclude Include="gaul\ga_sa.h" />
+    <ClInclude Include="gaul\ga_search.h" />
+    <ClInclude Include="gaul\ga_similarity.h" />
+    <ClInclude Include="gaul\ga_simplex.h" />
+    <ClInclude Include="gaul\ga_systematicsearch.h" />
+    <ClInclude Include="gaul\ga_tabu.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

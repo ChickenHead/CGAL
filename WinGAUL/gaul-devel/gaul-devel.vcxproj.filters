@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ga_similarity.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_simplex.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_stats.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_systematicsearch.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_tabu.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_utility.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_bitstring.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_chromo.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_climbing.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_compare.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_core.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_crossover.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_de.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_deterministiccrowding.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_gradient.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_intrinsics.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_io.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_mutate.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_optim.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_qsort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_randomsearch.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_rank.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_replace.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_sa.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_seed.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ga_select.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gaul.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_tabu.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_bitstring.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_chromo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_climbing.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_core.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_de.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_deterministiccrowding.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_gradient.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_intrinsics.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_optim.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_qsort.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_randomsearch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_sa.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_search.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_similarity.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_simplex.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gaul\ga_systematicsearch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
